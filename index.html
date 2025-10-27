@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Climax.app - Premium Luxury Streaming</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- 1. Header with logo, search, and user controls -->
+    <header>
+        <div class="logo">
+            <i class="fas fa-crown"></i>
+            <h1>CLIMAX</h1>
+        </div>
+        
+        <div class="search-bar">
+            <input type="text" placeholder="Search for premium content...">
+            <button><i class="fas fa-search"></i></button>
+        </div>
+        
+        <div class="nav-icons">
+            <i class="fas fa-video"></i>
+            <i class="fas fa-bell"></i>
+            <div class="user-avatar">JD</div>
+        </div>
+    </header>
+
+    <!-- 2. Main container with sidebar and content -->
+    <div class="container">
+        <!-- 3. Sidebar navigation -->
+        <div class="sidebar">
+            <div class="sidebar-item active">
+                <i class="fas fa-home"></i>
+                <span>Home</span>
+            </div>
+            <div class="sidebar-item">
+                <i class="fas fa-fire"></i>
+                <span>Trending</span>
+            </div>
+            <div class="sidebar-item">
+                <i class="fas fa-film"></i>
+                <span>Movies</span>
+            </div>
+            <div class="sidebar-item">
+                <i class="fas fa-music"></i>
+                <span>Music</span>
+            </div>
+            <div class="sidebar-item">
+                <i class="fas fa-gamepad"></i>
+                <span>Gaming</span>
+            </div>
+            
+            <div class="sidebar-divider"></div>
+            
+            <div class="sidebar-item">
+                <i class="fas fa-heart"></i>
+                <span>Liked Videos</span>
+            </div>
+            <div class="sidebar-item">
+                <i class="fas fa-history"></i>
+                <span>Watch History</span>
+            </div>
+            <div class="sidebar-item">
+                <i class="fas fa-download"></i>
+                <span>Downloads</span>
+            </div>
+            
+            <div class="sidebar-divider"></div>
+            
+            <div class="sidebar-item">
+                <i class="fas fa-cog"></i>
+                <span>Settings</span>
+            </div>
+        </div>
+
+        <!-- 4. Main content area -->
+        <div class="main-content">
+            <!-- 5. Featured video section -->
+            <div class="video-player-section">
+                <div class="video-container">
+                    <video class="video-player" controls poster="https://images.unsplash.com/photo-1611162617474-5b21e879e113?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1074&q=80">
+                        <source src="https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                </div>
+                
+                <div class="video-details">
+                    <h2 class="video-title-large">Luxury Car Collection 2023 | Exclusive Supercar Showcase</h2>
+                    
+                    <div class="video-actions">
+                        <button class="action-btn">
+                            <i class="fas fa-thumbs-up"></i>
+                            <span>12K</span>
+                        </button>
+                        <button class="action-btn">
+                            <i class="fas fa-thumbs-down"></i>
+                            <span>Dislike</span>
+                        </button>
+                        <button class="action-btn">
+                            <i class="fas fa-share"></i>
+                            <span>Share</span>
+                        </button>
+                        <button class="action-btn">
+                            <i class="fas fa-save"></i>
+                            <span>Save</span>
+                        </button>
+                    </div>
+                    
+                    <div class="channel-section">
+                        <div class="channel-details">
+                            <div class="channel-avatar">EC</div>
+                            <div>
+                                <h3>Elite Collections</h3>
+                                <p>1.2M subscribers</p>
+                            </div>
+                        </div>
+                        <button class="subscribe-btn">SUBSCRIBE</button>
+                    </div>
+                    
+                    <div class="video-description">
+                        <p>Experience the ultimate luxury car collection featuring the world's most exclusive supercars. From Bugatti to Lamborghini, this showcase brings you the pinnacle of automotive engineering and design.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 6. Recommended videos section -->
+            <h2 class="section-title">Recommended <span>Videos</span></h2>
+            
+            <div class="videos-grid" id="videosContainer">
+                <!-- Video cards will be dynamically inserted here -->
+            </div>
+
+            <!-- 7. Comments section -->
+            <div class="comments-section">
+                <h3 class="comment-count">245 Comments</h3>
+                
+                <div class="add-comment">
+                    <div class="user-avatar-small">JD</div>
+                    <input type="text" class="comment-input" placeholder="Add a comment...">
+                </div>
+                
+                <div class="comment">
+                    <div class="user-avatar-small">AM</div>
+                    <div class="comment-content">
+                        <h4>Alexander Maxwell <span>2 days ago</span></h4>
+                        <p>Absolutely stunning collection! The attention to detail in these vehicles is remarkable. The Bugatti Chiron is definitely my favorite.</p>
+                        <div class="comment-actions">
+                            <button class="comment-action">
+                                <i class="fas fa-thumbs-up"></i> 342
+                            </button>
+                            <button class="comment-action">
+                                <i class="fas fa-thumbs-down"></i>
+                            </button>
+                            <button class="comment-action">REPLY</button>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="comment">
+                    <div class="user-avatar-small">SR</div>
+                    <div class="comment-content">
+                        <h4>Sophia Reynolds <span>3 days ago</span></h4>
+                        <p>I had the privilege of seeing some of these cars at the Geneva Motor Show. The craftsmanship is beyond compare. Great video!</p>
+                        <div class="comment-actions">
+                            <button class="comment-action">
+                                <i class="fas fa-thumbs-up"></i> 215
+                            </button>
+                            <button class="comment-action">
+                                <i class="fas fa-thumbs-down"></i>
+                            </button>
+                            <button class="comment-action">REPLY</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
